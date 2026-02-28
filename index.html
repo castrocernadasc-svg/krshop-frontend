@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRSHOP - Iniciar sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>KRSHOP</h1>
+    </header>
+    <main>
+        <div id="loginFormContainer">
+            <h2>Iniciar sesión</h2>
+            <form id="loginForm">
+                <input type="email" id="correo" placeholder="Correo electrónico (ej. usuario@kr)" required>
+                <input type="password" id="contraseña" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+
+        <div id="bandejaEntrada" style="display: none;">
+            <h2>Bandeja de entrada</h2>
+            <ul id="correos">
+                <!-- Los correos generados se listarán aquí -->
+            </ul>
+        </div>
+
+        <div id="detalleCorreo" style="display: none;">
+            <h2>Detalles del correo</h2>
+            <p id="contenidoCorreo"></p>
+            <button id="volver">Volver a la bandeja de entrada</button>
+        </div>
+    </main>
+    <script src="animaciones.js"></script>
+</body>
+</html>
